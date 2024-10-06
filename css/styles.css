@@ -440,26 +440,3 @@ margin-top: -120px;
  transition-property:color; 
  
 } 
-.card {
-  /* Kartın normal durumunda herhangi bir gölge olabilir */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card:hover {
-  /* Hover durumunda daha belirgin bir gölge */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-button, a {
-  background-color: #ffffff;
-  color: #000000;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-button:hover, a:hover, button:focus, a:focus {
-  background-color: #f0f0f0;
-  color: #ff0000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
